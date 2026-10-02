@@ -148,14 +148,14 @@
     </effect>
     <effect id="BackScreen-effect">
       <profile_COMMON>
-        <newparam sid="rotw2_rviz_png-surface">
+        <newparam sid="tux_windows.jpg-surface">
           <surface type="2D">
-            <init_from>rotw2_rviz_png</init_from>
+            <init_from>tux_windows.jpg</init_from>
           </surface>
         </newparam>
-        <newparam sid="rotw2_rviz_png-sampler">
+        <newparam sid="tux_windows.jpg-sampler">
           <sampler2D>
-            <source>rotw2_rviz_png-surface</source>
+            <source>tux_windows.jpg-surface</source>
           </sampler2D>
         </newparam>
         <technique sid="common">
@@ -164,7 +164,7 @@
               <color sid="emission">0 0 0 1</color>
             </emission>
             <diffuse>
-              <texture texture="rotw2_rviz_png-sampler" texcoord="UVMap"/>
+              <texture texture="tux_windows.jpg-sampler" texcoord="UVMap"/>
             </diffuse>
             <index_of_refraction>
               <float sid="ior">1.45</float>
@@ -265,8 +265,8 @@
     <image id="limo_texture_png" name="limo_texture_png">
       <init_from>limo_texture.png</init_from>
     </image>
-    <image id="rotw2_rviz_png" name="rotw2_rviz_png">
-      <init_from>rotw2_rviz.png</init_from>
+    <image id="tux_windows.jpg" name="tux_windows.jpg">
+      <init_from>tux_windows.jpg</init_from>
     </image>
     <image id="sidescreentexture_png" name="sidescreentexture_png">
       <init_from>sidescreentexture.png</init_from>
