@@ -6,15 +6,161 @@
 > less bloat
 > wow
 
-This is a fork of LimoSim with unnecessary bloat removed.
+> **ROS 2 Humble edition**
+>
+> This repository is for **ROS 2 Humble**.
+>
+> Looking for the version with the **modified camera**?
+>
+> Consider switching to the `dev` branch.
+>
+> ```text
+> master = normal camera
+> dev    = modified camera
+> ```
+>
+> much branch
+> very camera
+> such choice
+> wow
 
-Why?
+## Getting the Code
 
-Because there was too much stuff.
+First, obtain the repository:
 
-And I did not want too much stuff.
+```bash
+git clone https://github.com/Nabsatang02/limosim.git
+cd limosim
+```
 
-Very simple.
+Much clone.
+
+Very repository.
+
+Such code.
+
+Wow.
+
+The default branch is `master`:
+
+```text
+master
+normal camera
+much stable
+very simulator
+wow
+```
+
+### Want modified camera?
+
+Switch to the `dev` branch:
+
+```bash
+git switch dev
+```
+
+Much switch.
+
+Very camera.
+
+Such modification.
+
+Wow.
+
+Or clone and switch in one glorious sequence:
+
+```bash
+git clone https://github.com/Nabsatang02/limosim.git
+cd limosim
+git switch dev
+```
+
+Very advanced.
+
+Such Git.
+
+Much branch.
+
+Wow.
+
+### Check current branch
+
+Not sure where you are?
+
+Ask Git:
+
+```bash
+git branch
+```
+
+You may see:
+
+```text
+* dev
+  master
+```
+
+The `*` means:
+
+> such branch
+> very current
+> wow
+
+### Switch back to master
+
+If you want the normal camera:
+
+```bash
+git switch master
+```
+
+Much normal.
+
+Very camera.
+
+Such master.
+
+Wow.
+
+### Switch to dev again
+
+If modified camera is desired:
+
+```bash
+git switch dev
+```
+
+Much modified.
+
+Very camera.
+
+Such dev.
+
+Wow.
+
+### Branch summary
+
+```text
+master
+  |
+  +-- normal camera
+  +-- much default
+  +-- very ordinary
+
+dev
+  |
+  +-- modified camera
+  +-- much experiment
+  +-- very different
+```
+
+Choose wisely.
+
+Or don't.
+
+It is just a Git branch.
+
+Wow.
 
 ## What is this?
 
@@ -79,6 +225,7 @@ In other words:
 much clean
 very minimal
 such maintainable
+wow
 ```
 
 ## Performance
@@ -96,6 +243,12 @@ Is this a scientifically meaningful benchmark?
 No.
 
 But the file tree looks better, so we consider this a success.
+
+Very scientific.
+
+Much benchmark.
+
+Wow.
 
 ## Installation
 
@@ -137,6 +290,12 @@ Please do not reintroduce the bloat that was removed.
 
 That would be very sad.
 
+Much sadness.
+
+Such regression.
+
+Wow.
+
 ## Original Project
 
 This repository is a fork of the original LimoSim project.
@@ -146,6 +305,12 @@ Credit goes to the original authors for the actual simulator.
 Credit for deleting things goes to me.
 
 Very important distinction.
+
+Much credit.
+
+Such deletion.
+
+Wow.
 
 ## Philosophy
 
@@ -169,3 +334,4 @@ Very reasonable.
 Such repository.
 
 Wow.
+
