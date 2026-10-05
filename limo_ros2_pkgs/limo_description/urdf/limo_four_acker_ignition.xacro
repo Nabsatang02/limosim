@@ -27,6 +27,14 @@
     <xacro:property name="wheel_length" value="0.001" />
     <xacro:property name="wheel_radius" value="0.045" />
 
+    <!-- CAMERA POSE PROPERTIES -->
+    <xacro:property name="cam_x" value="0.030" />
+    <xacro:property name="cam_y" value="0.0" />
+    <xacro:property name="cam_z" value="0.175" />
+    <xacro:property name="cam_roll" value="0.0" />
+    <xacro:property name="cam_pitch" value="0.5236" />
+    <xacro:property name="cam_yaw" value="0.0" />
+
   <link name="base_footprint"/>
 
   <joint name="base_joint" type="fixed">
@@ -71,7 +79,7 @@
     </xacro:limo_laser>
 
     <xacro:limo_depth_camera parent_prefix="base_link" frame_prefix="depth_camera">
-        <origin xyz="0.084 0 0.026" rpy="0 0 0"/>
+        <origin xyz="${cam_x} ${cam_y} ${cam_z}" rpy="${cam_roll} ${cam_pitch} ${cam_yaw}"/>
     </xacro:limo_depth_camera>
 
     <xacro:limo_imu parent_prefix="base_link" frame_prefix="imu">
@@ -302,6 +310,10 @@
       <child link="camera_depth_optical_frame" />
     </joint>
 
+    <gazebo reference="camera_depth_optical_joint">
+      <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+
     <!-- gz-sim port; type="depth" -> type="rgbd_camera" (native color +
          depth + points + camera_info, no in-URDF plugin). -->
 <gazebo reference="depth_camera_link">
@@ -322,7 +334,7 @@
                 <near>0.01</near>
                 <far>10.0</far>
               </clip>
-              <optical_frame_id>depth_camera_link</optical_frame_id>
+              <optical_frame_id>camera_depth_optical_frame</optical_frame_id>
             </camera>
         </sensor>
           </gazebo>
